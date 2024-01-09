@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+  margin:0;
+  min-height: 10vh;
+  display: relative;
+  top: 10em;
+  right: 100px;
+
+}
+.dark-mode {
+  background-color: black;
+  color: rgba(191, 123, 255, 0.781);    
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+
+::file-selector-button {
+  display: none;
+
+}
+
+input{
+  --glow-color: rgb(250, 189, 189);
+  --glow-spread-color: rgba(236, 43, 43, 0.781);
+  --enhanced-glow-color: rgb(233, 97, 100);
+  --btn-color: red;
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  left: 420px;
+  top: 110px;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+
+}
+
+input:after{pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+
+}
+
+input:hover{
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+  0 0 4em 2em var(--glow-spread-color),
+  inset 0 0 .75em .25em var(--glow-color);
+}
+
+input:active{
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+  0 0 2.5em 2em var(--glow-spread-color),
+  inset 0 0 .5em .25em var(--glow-color);
+}
+
+button {
+  --glow-color: rgb(245, 163, 164);
+  --glow-spread-color: rgba(236, 43, 43, 0.781);
+  --enhanced-glow-color: rgb(233, 97, 100);
+  --btn-color: red;
+ 
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  top: 130px;
+  left: 420px;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+       
+button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+       
+button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+  0 0 4em 2em var(--glow-spread-color),
+  inset 0 0 .75em .25em var(--glow-color);
+}
+       
+button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+  0 0 2.5em 2em var(--glow-spread-color),
+  inset 0 0 .5em .25em var(--glow-color);
+}
+       
+select {
+  width: 140px;
+  height: 35px;
+  padding: 5px 35px 5px 5px;
+  font-size: 18px;
+  border: 2px solid rgb(100, 61, 136);
+  }  
+     
